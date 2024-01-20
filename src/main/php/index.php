@@ -11,27 +11,33 @@
 <h1>Vegetable Voting</h1>
 
 <?php
-    if(!empty($_POST))var_dump($_POST);
+if (!empty($_POST)) var_dump($_POST);
 ?>
 
-<form action="index.php" method="post">
-    <div class="grid-container">
-        <?php for ($i = 1; $i <= 30; $i++): ?>
-            <div class="vegetable">
-                <div class="vegetable-image"><img src="./img/vegetable-<?php echo $i; ?>.png" alt="Carrot"></div>
-                <div class="buttons-bar">
-                    <div class="like-wrapper">
-                        <input type="submit" name="vegetable-like-<?php echo $i; ?>" class="like" value="Like 👍" />
-                    </div>
-                    <div class="likes">Total Likes: <span class="likes-number">0</span></div>
-                    <div class="dislike-wrapper">
-                        <input type="submit" name="vegetable-like-<?php echo $i; ?>" class="dislike" value="Dislike 👎" />
-                    </div>
+<div class="grid-container">
+    <?php for ($i = 1; $i <= 30; $i++): ?>
+        <div class="vegetable">
+            <div class="vegetable-image"><img src="./img/vegetable-<?php echo $i; ?>.png" alt="Carrot"></div>
+            <div class="buttons-bar">
+                <div class="like-wrapper">
+                    <form action="index.php" method="post">
+                        <input type="hidden" name="vegetable_id" value="<?php echo $i; ?>"/>
+                        <input type="hidden" name="vote" value="upvote"/>
+                        <input type="submit" name="vegetable-like-<?php echo $i; ?>" class="like" value="Like 👍"/>
+                    </form>
+                </div>
+                <div class="likes">Total Likes: <span class="likes-number">0</span></div>
+                <div class="dislike-wrapper">
+                    <form action="index.php" method="post">
+                        <input type="hidden" name="vegetable_id" value="<?php echo $i; ?>"/>
+                        <input type="hidden" name="vote" value="downvote"/>
+                        <input type="submit" name="vegetable-like-<?php echo $i; ?>" class="dislike" value="Dislike 👎"/>
+                    </form>
                 </div>
             </div>
-        <?php endfor; ?>
-    </div>
-</form>
+        </div>
+    <?php endfor; ?>
+</div>
 
 </body>
 </html>
