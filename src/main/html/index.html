@@ -4,79 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetable Voting</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        .grid-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: .5em;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .vegetable {
-            text-align: center;
-            border: 1px solid #eee;
-            border-radius: .6em;
-            padding: .3em;
-            width: 18em;
-        }
-
-        .vegetable-image {
-            padding: 0;
-            margin: 0;
-        }
-
-        .buttons-bar {
-            display: flex;
-            justify-content: space-between;
-            width: 17em;
-            margin: 0 auto;
-            align-items: center;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            margin-bottom: 0;
-        }
-
-        button {
-            padding: 5px 10px;
-            margin: 5px;
-            cursor: pointer;
-            border-radius: .3em;
-        }
-
-        .likes {
-            border: 1px solid #ccc;
-            border-radius: .3em;
-            padding: .2em;
-            background: #ddd;
-        }
-
-        .like {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-        }
-
-        .dislike {
-            background-color: #f44336;
-            color: white;
-            border: none;
-        }
-
-        .like, .dislike, .likes {
-
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -84,7 +12,7 @@
 
 <div class="grid-container">
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-1.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-1.png" alt="Carrot"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -96,7 +24,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-2.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-2.png" alt="Broccoli"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -108,7 +36,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-3.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-3.png" alt="Tomato"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -120,7 +48,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-4.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-4.png" alt="Potato"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -132,7 +60,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-5.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-5.png" alt="Spinach"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -144,7 +72,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-6.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-6.png" alt="Cucumber"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -156,7 +84,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-7.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-7.png" alt="Bell Pepper"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -168,7 +96,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-8.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-8.png" alt="Onion"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -180,7 +108,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-9.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-9.png" alt="Garlic"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -192,7 +120,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-10.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-10.png" alt="Cauliflower"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -204,7 +132,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-11.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-11.png" alt="Zucchini"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -216,7 +144,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-12.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-12.png" alt="Eggplant"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -228,7 +156,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-13.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-13.png" alt="Radish"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -240,7 +168,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-14.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-14.png" alt="Cabbage"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -252,7 +180,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-15.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-15.png" alt="Lettuce"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -264,7 +192,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-16.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-16.png" alt="Kale"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -276,7 +204,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-17.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-17.png" alt="Brussels Sprouts"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -288,7 +216,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-18.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-18.png" alt="Asparagus"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -300,7 +228,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-19.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-19.png" alt="Sweet Potato"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -312,7 +240,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-20.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-20.png" alt="Green Bean"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -324,7 +252,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-21.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-21.png" alt="Peas"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -336,7 +264,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-22.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-22.png" alt="Corn"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -348,7 +276,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-23.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-23.png" alt="Artichoke"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -360,7 +288,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-24.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-24.png" alt="Beetroot"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -372,7 +300,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-25.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-25.png" alt="Celery"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -384,7 +312,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-26.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-26.png" alt="Pumpkin"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -396,7 +324,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-27.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-27.png" alt="Squash"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -408,7 +336,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-28.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-28.png" alt="Turnip"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -420,7 +348,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-29.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-29.png" alt="Okra"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
@@ -432,7 +360,7 @@
         </div>
     </div>
     <div class="vegetable">
-        <div class="vegetable-image"><img src="../resources/img/vegetable-30.png" alt="Vegetable 1"></div>
+        <div class="vegetable-image"><img src="./img/vegetable-30.png" alt="Leek"></div>
         <div class="buttons-bar">
             <div class="like-wrapper">
                 <button class="like">Like 👍</button>
