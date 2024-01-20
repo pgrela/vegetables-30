@@ -40,7 +40,7 @@ img {
     margin-bottom: 0;
 }
 
-button {
+input[type=submit] {
     padding: 5px 10px;
     margin: 5px;
     cursor: pointer;
